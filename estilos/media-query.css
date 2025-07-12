@@ -19,3 +19,14 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 1000px) {
+
+    #noticia-1 {
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    padding: 10px;
+    }
+
+}
