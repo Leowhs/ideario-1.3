@@ -1,0 +1,32 @@
+@media (max-width: 1000px) {
+  .noticias-principais {
+    grid-template-columns: 1fr;
+  }
+
+  #noticia-1,
+  #noticia-2,
+  #noticia-3 {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .lista-em-alta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .lista-em-alta a {
+    font-size: 16px;
+  }
+  
+  .conteudo-resumo {
+    flex-direction: column;
+  }
+
+  .bloco-destaque {
+    justify-content: center;
+  }
+}

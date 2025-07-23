@@ -4,65 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideario</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="cod/estilos/style.css">
+    <link rel="stylesheet" href="cod/estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="scripts/java.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <nav>
-            <span class="material-icons">menu</i></button>
+            <span class="material-icons">menu</span>
         </nav>
         <h1>Ideario</h1>
     </header>
 
     <section class="em-alta">
-    <h2>Artigos em alta</h2>
-    <hr class="linha-em-alta">
-
-    <div class="lista-em-alta">
-        <a href="#">Diferença dos "porquês"</a>
-        <a href="#">O uso excessivo de IAS</a>
-        <a href="#">Artigo 3</a>
-        <a href="#">Artigo 4</a>
-    </div>
+        <h2>Artigos em alta</h2>
+        <hr class="linha-em-alta">
+        <div class="lista-em-alta">
+            <a href="#">Diferença dos "porquês"</a>
+            <a href="#">O uso excessivo de IAs</a>
+            <a href="#">Fake News e Educação</a>
+        </div>
     </section>
 
-    <div class="noticias-principais">
+    <section class="noticias-principais">
         <div id="noticia-1">
-            
             <h2>Noticia Principal</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim beatae explicabo assumenda accusantium perspiciatis nihil atque delectus fuga nobis magni veritatis recusandae, repellendus sapiente iste neque consequatur. Quaerat, culpa ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis debitis a tempora non odit numquam quae vero dolorem veritatis quas ab, pariatur, voluptatibus, quibusdam officia labore aspernatur in quis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, alias optio numquam delectus velit, unde rem reprehenderit, temporibus tempore pariatur quas maxime quae modi culpa porro ipsum enim id veritatis. <br> <br>
-                <div id="data">dd/mm/aa</div>
-            </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga velit doloremque delectus sapiente suscipit mollitia laudantium pariatur at, amet rem praesentium sit molestias est dolore, reprehenderit possimus odit incidunt! <br><br>
 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aperiam sit culpa facilis quidem tempore, sint iure voluptatum harum fugit quisquam fuga magni, quo adipisci iusto, accusamus vero! Esse, nobis! <br><br>
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit animi rem illo, itaque illum ad natus nesciunt! Impedit esse accusantium libero consequuntur. Aperiam ratione laudantium, eos quidem atque pariatur voluptatum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illo modi iste velit perferendis omnis saepe atque perspiciatis. Magnam repellendus praesentium sunt perspiciatis modi aperiam veniam, reprehenderit error ipsum cumque?
+                Lorem ipsum dolor sit, amet! <br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fuga asperiores fugit molestias ullam rerum necessitatibus<br> <br>
+
+                <div id="data">21/07/2025</div>
+            </p>
         </div>
 
         <div id="noticia-2">
-            
-            <h2>Noticia 2</h2>
+            <h2>Noticia 1</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br> 
-                dd/mm/aa
-            </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, sequi excepturi quam tempora obcaecati qui a earum, iste dolores nam, hic distinctio accusantium! Saepe molestiae praesentium dolorem placeat repellat iure.<br><br>
 
+                <div id="data">21/07/2025</div>
+            </p>
         </div>
 
         <div id="noticia-3">
-            
-            <h2>Noticia 3</h2>
+            <h2>Noticia 2</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br> 
-                dd/mm/aa
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt consequatur placeat sed expedita harum laborum cupiditate architecto mollitia aspernatur ducimus dolorem dignissimos excepturi itaque, ut unde ex cum eum.<br><br>
+
+                <div id="data">21/07/2025</div>
             </p>
-
         </div>
+    </section>
 
+    <section class="slides">
+    <div class="slide-container">
+        <div class="slide">
+            <img src="bjork.jpg" alt="Imagem 1">
+            <h2>A menina que pisou no pão.</h2>
+            <p>Descrição do slide 1.</p>
+        </div>
+        <div class="slide">
+            <img src="imagem2.jpg" alt="Imagem 2">
+            <h2>Título do Slide 2</h2>
+            <p>Descrição do slide 2.</p>
+        </div>
+        <div class="slide">
+            <img src="imagem3.jpg" alt="Imagem 3">
+            <h2>Título do Slide 3</h2>
+            <p>Descrição do slide 3.</p>
+        </div>
     </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
 
+    <footer>
+        <h2>Ideario</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, voluptatibus possimus accusantium, provident commodi labore voluptate porro vero architecto sapiente quas dolore esse dignissimos recusandae, ab tempore eveniet ipsa exercitationem!</p>
+    </footer>
+
+    <script src="cod/scripts/java.js"></script>
 </body>
 </html>

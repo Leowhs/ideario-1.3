@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+:root {
+  --cor-primaria:#79461d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+header .material-icons {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+.em-alta {
+  background-color: white;
+  margin: 10px 0px 10px 10px;
+  height: 90px;
+  width: 98.9%;
+  padding: 5px;
+}
+
+.em-alta h2 {
+  font-size: 30px;
+  margin: 0px 0px 5px 5px;
+}
+
+hr {
+  width: 90%;
+  height: 0.6px;
+  background-color: #000;
+  border: none;
+  margin-left: 5px;
+}
+
+.lista-em-alta {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.lista-em-alta a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18.5px;
+}
+
+.lista-em-alta a:hover {
+  color: rgb(121, 70, 29);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.noticias-principais {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  margin: 5px 0px 5px 5px;
+  padding: 5px;
+}
+
+#noticia-1 {
+  background-color: white;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  padding: 10px;
+}
+
+#noticia-2 {
+  background-color: white;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 10px;
+}
+
+#noticia-3 {
+  background-color: white;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 10px;
+}
+
+.slides {
+  background-color: var(--cor-primaria);
+  color: white;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.slide img {
+  max-width: 300px;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 0.4px solid rgba(255, 255, 255, 0.589);
+  border-radius: 5px;
+}
+
+.slide h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.slide p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #793e0d8f;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  margin-top: 5px;
+  padding: 10px;
+}
